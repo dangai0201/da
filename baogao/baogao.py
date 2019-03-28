@@ -1,0 +1,22 @@
+#-*-coding:utf-8-*-
+import HTMLTestRunner
+
+import time
+from fz.fengzhuang import Login
+
+
+
+
+class Baogao():
+    def __init__(self):
+        self.driver=Login().driver
+
+    def getbaogao(self,file,title,desc,ceshitaojian):
+
+        #1.打开或者创建一个新的测试报告
+        #将测试结果写入到测试报告内
+        time1 = time.strftime("%Y-%m-%d %H-%M", time.localtime())
+        print (time1)
+        filename="../baogao/"+time1+file+".html"
+        with open(filename,'wb') as aa:
+            HTMLTestRunner.HTMLTestRunner(stream=aa, verbosity=1, title=title, description=desc).run(ceshitaojian)

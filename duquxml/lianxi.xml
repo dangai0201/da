@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<denglu>
+
+    <denglu001>
+        <username> </username>
+        <password>123456</password>
+        <yuqi>用户名不能为空</yuqi>
+    </denglu001>
+
+    <denglu002>
+        <username>123456</username>
+        <password> </password>
+        <yuqi>密码不能为空</yuqi>
+    </denglu002>
+
+    <denglu003>
+        <username>大连1</username>
+        <password>123456</password>
+        <yuqi>用户名或密码错误</yuqi>
+
+    </denglu003>
+
+    <denglu004>
+        <username>123456123213213</username>
+        <password>123456</password>
+        <yuqi>用户名或密码错误</yuqi>
+    </denglu004>
+
+    <denglu005>
+        <username>123456</username>
+        <password>123456</password>
+        <yuqi>登录成功</yuqi>
+    </denglu005>
+    <denglu010>
+        <username>12  34</username>
+        <password>123456</password>
+        <yuqi>用户名或密码错误</yuqi>
+    </denglu010>
+
+
+
+
+
+</denglu>
