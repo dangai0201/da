@@ -1,7 +1,11 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 import time
 
 from fz.fengzhuang import Login
+
 
 class Gouwuche():
     def __init__(self):

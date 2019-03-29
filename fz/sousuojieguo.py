@@ -1,4 +1,7 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 from fz.fengzhuang import Login
 
 class Sousuojieguo():

@@ -1,10 +1,17 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 import unittest
 from fz.fengzhuang import Login
 from fz.zhuce import Zhuce
 from fz.denglu import Denglu
 import time
 from baogao.baogao import Baogao
+
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 
 class ZHUCE(unittest.TestCase):
     @classmethod

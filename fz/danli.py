@@ -1,4 +1,8 @@
 #-*-coding:utf-8-*-
+
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 #python单例模式
 def singleton(cls):
     #定义一个字典

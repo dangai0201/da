@@ -2,6 +2,10 @@
 import time
 from fz.fengzhuang import Login
 
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
+
 
 
 

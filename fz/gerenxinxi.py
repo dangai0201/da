@@ -1,6 +1,13 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 
 from fz.fengzhuang import Login
+
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 
 class Genrenxinxi():
     def __init__(self):

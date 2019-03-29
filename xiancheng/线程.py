@@ -1,7 +1,10 @@
 #-*-coding:utf-8-*-
-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 import threading
 import time
+
 
 def a(file,times):
     for i in range(times):

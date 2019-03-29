@@ -1,4 +1,7 @@
 # -*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 
 import unittest
 import time
@@ -13,6 +16,9 @@ from fz.shangpinxiangqing import Shangpinxiangqing
 from fz.gouwuche import Gouwuche
 from fz.tijiaodingdan import Tijiaodingdan
 from fz.gerenxinxi import Genrenxinxi
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 
 
 class Liucheng(unittest.TestCase):
