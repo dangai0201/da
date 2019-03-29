@@ -24,7 +24,7 @@ class Denglu():
 
 
     def alert(self):
-        return self.driver.switch_to_alert()
+        return self.driver.switch_to.alert
 
 
 

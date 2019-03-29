@@ -4,7 +4,7 @@ os.getcwd()
 sys.path.append(os.getcwd())
 import time
 import unittest
-import time
+
 from fz.fengzhuang import Login
 from fz.zhuce import Zhuce
 from fz.denglu import Denglu
