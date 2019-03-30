@@ -14,10 +14,10 @@ class Loginzhuce():
         # 2.添加测试用例
         # 3.执行测试套件
         nba = unittest.TestSuite()
-        print nba
+        print (nba)
         #执行该模块下方001用例
         nba.addTest(ZHUCE("test_003"))
-        #print nba
+        #print (nba)
         #执行该模块下方的所有用例
         #nba.addTest(unittest.makeSuite(ZHUCE))
         unittest.TextTestRunner().run(nba)
