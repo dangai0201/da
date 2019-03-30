@@ -34,7 +34,8 @@ class Gouwuliucheng():
         #nba.addTest(unittest.makeSuite(ZHUCE))
         #unittest.TextTestRunner().run(nba)
         Baogao().getbaogao(u"",u"ecshop",u"购物流程用例",nba)
-        filename = "../baogao/" + time1 + ".html"
+        filename = "baogao/" + time1 + ".html"
+        #filename = "../baogao/" + time1 + ".html"
         Youjian().sendyoujian("优购商城", "优购商城流程测试", filename)
 
         pass
