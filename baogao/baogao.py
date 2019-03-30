@@ -20,6 +20,9 @@ class Baogao():
         #将测试结果写入到测试报告内
         time1 = time.strftime("%Y-%m-%d %H-%M", time.localtime())
         print (time1)
-        filename="../baogao/"+time1+file+".html"
+
+        #filename="../baogao/"+time1+file+".html"
+        filename="baogao/"+time1+file+".html"
+
         with open(filename,'wb') as aa:
             HTMLTestRunner.HTMLTestRunner(stream=aa, verbosity=1, title=title, description=desc).run(ceshitaojian)
