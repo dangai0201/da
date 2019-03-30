@@ -19,7 +19,7 @@ class Login():
 
 
         #self.driver = webdriver.Chrome()
-        self.driver = webdriver.Chrome('./chromedriver')
+        self.driver = webdriver.Chrome('fz/chromedriver')
         self.driver.maximize_window()
         self.driver.get("http://192.168.43.129:811/ecshop/upload/")
         #print self.driver
