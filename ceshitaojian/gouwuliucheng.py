@@ -1,4 +1,7 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 import  unittest
 from fz.fengzhuang import Login
 from fz.zhuce import Zhuce

@@ -1,11 +1,12 @@
 #-*-coding:utf-8-*-
+import os,sys
+os.getcwd()
+sys.path.append(os.getcwd())
 from selenium import webdriver
 from fz.danli import singleton
 
 
-import os,sys
-os.getcwd()
-sys.path.append(os.getcwd())
+
 @singleton
 class Login():
     def __init__(self):
