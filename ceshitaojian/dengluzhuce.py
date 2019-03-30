@@ -20,6 +20,7 @@ class Loginzhuce():
         #print (nba)
         #执行该模块下方的所有用例
         #nba.addTest(unittest.makeSuite(ZHUCE))
+
         unittest.TextTestRunner().run(nba)
         pass
     def test_002(self):
