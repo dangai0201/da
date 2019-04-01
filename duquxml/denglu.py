@@ -35,7 +35,7 @@ class DENGLU(unittest.TestCase):
 
     def test_001(self):
         i="1"
-        print "test00"+i
+        print ("test00"+i)
         username = Duqu().duqu("lianxi", "denglu001", "username")
         password = Duqu().duqu("lianxi", "denglu001", "password")
         yuqi = Duqu().duqu("lianxi", "denglu001", "yuqi")
@@ -47,12 +47,12 @@ class DENGLU(unittest.TestCase):
         a = Denglu().alert()
         #a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
     def test_002(self):
         i="2"
-        print "test00" + i
+        print ("test00" + i)
         username = Duqu().duqu("lianxi", "denglu00"+i, "username")
         password = Duqu().duqu("lianxi", "denglu00"+i, "password")
         yuqi = Duqu().duqu("lianxi", "denglu00"+i, "yuqi")
@@ -64,12 +64,12 @@ class DENGLU(unittest.TestCase):
         a = Denglu().alert()
         #a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
     def test_003(self):
         i="3"
-        print "test00" + i
+        print ("test00" + i)
         username = Duqu().duqu("lianxi", "denglu00"+i, "username")
         password = Duqu().duqu("lianxi", "denglu00"+i, "password")
         yuqi = Duqu().duqu("lianxi", "denglu00"+i, "yuqi")
@@ -81,12 +81,12 @@ class DENGLU(unittest.TestCase):
         #a = Denglu().alert()
         a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
     def test_004(self):
         i="4"
-        print "test00" + i
+        print ("test00" + i)
         username = Duqu().duqu("lianxi", "denglu00"+i, "username")
         password = Duqu().duqu("lianxi", "denglu00"+i, "password")
         yuqi = Duqu().duqu("lianxi", "denglu00"+i, "yuqi")
@@ -98,12 +98,12 @@ class DENGLU(unittest.TestCase):
         #a = Denglu().alert()
         a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
     def test_005(self):
         i="5"
-        print "test00" + i
+        print ("test00" + i)
         username = Duqu().duqu("lianxi", "denglu00"+i, "username")
         password = Duqu().duqu("lianxi", "denglu00"+i, "password")
         yuqi = Duqu().duqu("lianxi", "denglu00"+i, "yuqi")
@@ -115,12 +115,12 @@ class DENGLU(unittest.TestCase):
         #a = Denglu().alert()
         a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
     def test_010(self):
         i="10"
-        print "test0" + i
+        print ("test0" + i)
         username = Duqu().duqu("lianxi", "denglu0"+i, "username")
         password = Duqu().duqu("lianxi", "denglu0"+i, "password")
         yuqi = Duqu().duqu("lianxi", "denglu0"+i, "yuqi")
@@ -132,7 +132,7 @@ class DENGLU(unittest.TestCase):
         #a = Denglu().alert()
         a = self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/p[1]")
         shiji = a.text
-        print shiji
+        print (shiji)
         self.assertIn(yuqi, shiji, msg=u"断言失败")
         pass
 
@@ -155,7 +155,7 @@ if __name__ == '__main__':
     list=["test_010","test_003","test_001"]
     for tmp in list:
         nba.addTest(DENGLU(tmp))
-        print tmp
+        print (tmp)
     unittest.TextTestRunner().run(nba)
 
 

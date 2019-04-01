@@ -1,23 +1,39 @@
-import pymysql
+#-*-coding:utf-8-*-
 
-class Lianjieshujuku(object):
-    def __init__(self,host,user,pwd,database):
-        self.host=host
-        self.user=user
-        self.pwd=pwd
-        self.database=database
-    def lianjieshujuku(self,sql):
-        #链接数据库
-        self.db=pymysql.connect(self.host,self.user,self.pwd,self.database)
-        #使用cursor()方法获取操作游标
-        self.cursor = self.db.cursor()
-        #执行sql语句
-        self.cursor.execute(sql)
-
-        return self.cursor
-
-    def guanbishujuku(self):
-        self.db.close()
+import unittest
+import json
+import  requests
+from jiekou.fengzhuang import Jiekou,Fanhuizhi
+from jiekou.jiekouxml import Duqu
 
 
+class Testjiekou(unittest.TestCase):
+    def setUp(self):
+        url = "https://api.edu.3ttech.cn/login/login"
+        b=Duqu().duqu("jie","jiekou001","password")
+        a=Duqu().duqu("jie","jiekou001","username")
+        canshu = {
+            'userName': a,
+            'password': b,
 
+        }
+        fangfa="post"
+
+        self.a=Jiekou(url,fangfa,canshu).panduanfangshi()
+
+        pass
+    def tearDown(self):
+        pass
+
+
+
+
+
+    def test_001(self):
+        #状态码
+        aa=Fanhuizhi(self.a).zidian()
+        print(aa)
+
+
+if __name__ == '__main__':
+    unittest.main()

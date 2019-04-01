@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<denglu>
+
+    <jiekou001>
+        <username>18410178656</username>
+        <password>123456</password>
+        <yuqi>用户名不能为空</yuqi>
+    </jiekou001>
+
+    <jiekou002>
+        <username>18410178656</username>
+        <password>123</password>
+        <yuqi>密码不能为空</yuqi>
+    </jiekou002>
+
+    <jiekou003>
+        <username>18410178656</username>
+        <password>211 212</password>
+        <yuqi>用户名或密码错误</yuqi>
+
+    </jiekou003>
+
+
+</denglu>

@@ -16,4 +16,4 @@ class Duqu():
         return c
 
 a=Duqu().duqu()
-print a
+print (a)
