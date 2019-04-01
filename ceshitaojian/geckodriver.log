@@ -1,0 +1,10 @@
+1553910057615	geckodriver	INFO	Listening on 127.0.0.1:64242
+1553910058559	mozprofile::profile	INFO	Using profile path /var/folders/cn/4n3ddv5j6hdc3dxlspl3_zl80000gn/T/rust_mozprofile.GqOoVafqQAky
+1553910058565	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1553910058571	geckodriver::marionette	INFO	Connecting to Marionette on localhost:64254
+[warn] kq_init: detected broken kqueue; not using.: Undefined error: 0
+1553910065088 Marionette: Element is missing an accesible name -> id: , tagName: INPUT, className: inputBg
+1553910065129 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: , tagName: INPUT, className: inputBg
+1553910065170 Marionette: Element is missing an accesible name -> id: , tagName: INPUT, className: us_Submit
+1553910065363 Marionette: Element is missing an accesible name -> id: keyword, tagName: INPUT, className: indexw_header_input_text
+JavaScript error: http://192.168.43.129:811/ecshop/upload/user.php, line 1: ReferenceError: checkSearchForm is not defined
