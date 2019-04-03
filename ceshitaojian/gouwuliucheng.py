@@ -13,7 +13,10 @@ from mokuai.denglu import DENGLU
 from mokuai.liucheng import Liucheng
 from baogao.baogao import Baogao
 from youjian.youjian import Youjian
+from youjian.youjian2 import Youjian
 import time
+from baogao.jietu.jietu import Jietu
+
 
 
 
@@ -33,10 +36,13 @@ class Gouwuliucheng():
         #执行该模块下方的所有用例
         #nba.addTest(unittest.makeSuite(ZHUCE))
         #unittest.TextTestRunner().run(nba)
+
+
         Baogao().getbaogao(u"",u"ecshop",u"购物流程用例",nba)
-        filename = "baogao/" + time1 + ".html"
+        #filename = "baogao/" + time1 + ".html"
         #filename = "../baogao/" + time1 + ".html"
-        Youjian().sendyoujian("优购商城", "优购商城流程测试", filename)
+        #Youjian().sendyoujian("优购商城", "优购商城流程测试", filename)
+        Youjian.sendEmail("大连必胜","优购商城流程测试")
 
         pass
 

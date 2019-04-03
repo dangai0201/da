@@ -29,7 +29,6 @@ filename1=open(files1,"rb")
 emain_name=filename1.read()
 #关闭流
 filename1.close()
-print (emain_name)
 # 设置邮件的内容
 msg=MIMEText(emain_name,_subtype="html",_charset="UTF-8")
 # 设置主题
