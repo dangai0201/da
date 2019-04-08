@@ -29,7 +29,7 @@ class DENGLU(unittest.TestCase):
         pass
 
     def tearDown(self):
-        #通过try进行判断有没有弹框
+        # 通过try进行判断有没有弹框
         # try:
         #     Denglu().alert().accept()
         # except Exception:

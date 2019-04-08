@@ -29,8 +29,11 @@ class Youjian():
 
         b = []
         dict1["attachments"] = b
-        aaa="../baogao/jietu/2019-04-03-10_33.png"
-        aaa1="../baogao/"+time1+".html"
+        # aaa="../baogao/jietu/jietu.png"
+        # aaa1 = "../baogao/" + time1 + ".html"
+        aaa="baogao/jietu/jietu.png"
+        aaa1="baogao/"+time1+".html"
+        # aaa1="../baogao/2019-04-08 10-29.html"
 
 
 
@@ -57,5 +60,8 @@ class Youjian():
 
 
         server.send_mail(recive, dict1)
+# Youjian().sendEmail("大连必胜","优购商城流程测试")
+
+
 
 

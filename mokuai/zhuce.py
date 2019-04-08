@@ -21,7 +21,7 @@ class ZHUCE(unittest.TestCase):
         pass
     @classmethod
     def tearDownClass(self):
-        Denglu().guanbi()
+        # Denglu().guanbi()
         pass
     def setUp(self):
         #每次用例执行前执行一次

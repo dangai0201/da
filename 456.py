@@ -99,6 +99,13 @@ picture_time = time.strftime("%Y-%m-%d-%H_%M", time.localtime(time.time()))
 
 
 # 参考博客：https://blog.csdn.net/lykio_881210/article/details/79281982
+# https://www.cnblogs.com/alex-bn-lee/p/9218772.html
+
+
+
+
+#@staticmethod
+# 以上实例声明了静态方法 f，类可以不用实例化就可以调用该方法 C.f()，当然也可以实例化后调用 C().f()。
 
 
 
