@@ -15,7 +15,7 @@ class Youjian():
         3，主题及附件以及正文内容
         :return:
         '''
-        time1 = time.strftime("%Y-%m-%d %H-%M", time.localtime())
+        time1 = time.strftime("%Y-%m-%d ", time.localtime())
         server = zmail.server("15712959187@163.com", "ylg123456")
         #存放要发送的收件人列表
         recive = "1471375117@qq.com"
@@ -30,9 +30,11 @@ class Youjian():
         b = []
         dict1["attachments"] = b
         # aaa="../baogao/jietu/jietu.png"
-        # aaa1 = "../baogao/" + time1 + ".html"
-        aaa="baogao/jietu/jietu.png"
-        aaa1="baogao/"+time1+".html"
+        aaa= "../baogao/jietu/"+time1+".png"
+        print(aaa)
+        # aaa="baogao/jietu/jietu.png"
+        aaa1="../baogao/"+time1+".html"
+        print(aaa1)
         # aaa1="../baogao/2019-04-08 10-29.html"
 
 

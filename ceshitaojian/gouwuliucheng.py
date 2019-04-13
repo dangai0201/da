@@ -40,8 +40,10 @@ class Gouwuliucheng():
 
         Baogao().getbaogao(u"",u"ecshop",u"购物流程用例",nba)
         #filename = "baogao/" + time1 + ".html"
-        # filename = "../baogao/" + time1 + ".html"
+        filename = "../baogao/" + time1 + ".html"
         #Youjian().sendyoujian("优购商城", "优购商城流程测试", filename)
+        Jietu().jiequtupian()
+        time.sleep(5)
         Youjian.sendEmail("大连必胜","优购商城流程测试")
 
         pass
